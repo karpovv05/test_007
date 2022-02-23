@@ -1,9 +1,17 @@
 from random import *
 
-array = []
-for i in range(21):
-    array.append(randint(-100, 101))
+line=int(input("Символов в строке "))
+col=int(input("Кол во строк "))
 
-for l in range(21):
-    if -6 < array[l] < 28:
-        print(array[l])
+
+num1=int(input("От скольки "))
+num2=int(input("До скольки "))
+
+matrix = []
+
+for c in range(col):
+    matrix.append([])
+    for l in range(line):
+        matrix[c].append(randint(num1,num2))
+
+print(matrix)
