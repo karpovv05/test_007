@@ -9,3 +9,6 @@ per = input()
 rez = mirror(per)
 
 print(rez)
+
+text1=input()[::-1]
+print(text1)
